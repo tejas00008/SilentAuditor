@@ -1,0 +1,13 @@
+erp_name: NetSuite
+field_mapping:
+  invoice_number: "Transaction Number"
+  vendor_id: "Vendor ID"
+  vendor_name: "Vendor Name"
+  invoice_date: "Date"
+  total_amount: "Amount"
+  line_item_description: "Item Description"
+  unit_price: "Rate"
+  quantity: "Quantity"
+  po_number: "PO #"
+  payment_date: "Date Paid"
+  payment_status: "Status"

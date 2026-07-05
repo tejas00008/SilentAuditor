@@ -1,0 +1,13 @@
+erp_name: QuickBooks
+field_mapping:
+  invoice_number: "Bill No."
+  vendor_id: "Vendor"
+  vendor_name: "Vendor"
+  invoice_date: "Bill Date"
+  total_amount: "Amount"
+  line_item_description: "Description"
+  unit_price: "Rate"
+  quantity: "Qty"
+  po_number: "P.O. Number"
+  payment_date: "Payment Date"
+  payment_status: "Payment Status"

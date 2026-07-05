@@ -1,0 +1,1 @@
+"""SilentAuditor test suite."""

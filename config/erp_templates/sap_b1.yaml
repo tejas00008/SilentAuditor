@@ -1,0 +1,13 @@
+erp_name: SAP Business One
+field_mapping:
+  invoice_number: "DocNum"
+  vendor_id: "CardCode"
+  vendor_name: "CardName"
+  invoice_date: "DocDate"
+  total_amount: "DocTotal"
+  line_item_description: "Dscription"
+  unit_price: "Price"
+  quantity: "Quantity"
+  po_number: "NumAtCard"
+  payment_date: "PaidDate"
+  payment_status: "DocStatus"

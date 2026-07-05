@@ -1,0 +1,96 @@
+duplicate_detection:
+  exact_match_confidence: 0.99
+  fuzzy_composite_threshold: 0.85
+  ambiguous_zone_lower: 0.70
+  amount_tolerance_pct: 0.05
+  date_window_days: 90
+  recurring_invoice_min_count: 3
+  recurring_interval_tolerance_days: 5
+
+price_creep:
+  min_data_points: 4
+  min_months: 3
+  cumulative_threshold_6mo_pct: 8
+  cumulative_threshold_12mo_pct: 12
+  single_jump_threshold_pct: 5
+  contract_tolerance_pct: 3
+  p_value_significance: 0.05
+
+phantom_services:
+  unmatched_po_min_amount: 1000
+  partial_match_deviation_pct: 20
+  vagueness_flag_threshold: 25
+  vagueness_min_amount: 2000
+  category_mismatch_min_amount: 3000
+  one_off_min_amount: 2000
+  delivery_date_tolerance_days: 7
+
+vendor_collusion:
+  relationship_composite_threshold: 0.60
+  timing_correlation_threshold: 0.7
+  overbilling_percentile: 75
+  overbilling_margin_pct: 15
+  approval_concentration_warning: 0.3
+  benfords_min_invoices: 50
+  benfords_p_value: 0.05
+
+contract_compliance:
+  rate_tolerance_pct: 5
+  discount_window_buffer_days: 1
+  scope_similarity_threshold: 0.70
+  scope_ambiguous_lower: 0.50
+  renewal_alert_days: 90
+  volume_aggregation_period: "quarter"
+
+vendor_behavior:
+  min_history_invoices: 6
+  min_history_months: 3
+  amount_zscore_warning: 2.5
+  amount_zscore_critical: 3.0
+  bank_change_score: 0.95
+  composite_high_threshold: 0.70
+  composite_medium_threshold: 0.50
+  composite_low_threshold: 0.30
+  multi_anomaly_escalation_count: 3
+  drift_lookback_months: 3
+
+market_price:
+  min_vendors_per_category: 3
+  deviation_flag_above_p90_pct: 10
+  min_absolute_deviation_dollars: 50
+  min_total_overcharge: 500
+  vendor_premium_index_threshold: 15
+  benchmark_recalculation_frequency: "monthly"
+
+split_invoicing:
+  temporal_windows_days: [7, 14, 30]
+  min_invoices_in_cluster: 4
+  below_threshold_band_pct: 10
+  line_item_similarity_threshold: 0.75
+  benfords_mad_first_digit: 0.015
+  benfords_mad_first_two: 0.012
+  benfords_min_sample: 50
+  historical_amount_drop_pct: 40
+  default_approval_thresholds: [5000, 25000, 100000]
+  construction_keywords_suppress:
+    - progress
+    - draw
+    - retainage
+    - milestone
+    - phase
+    - application for payment
+    - pay app
+    - schedule of values
+    - change order
+    - requisition
+
+alert_tiers:
+  critical:
+    min_confidence: 0.85
+    min_amount: 5000
+  review:
+    min_confidence: 0.60
+    min_amount: 1000
+  informational:
+    min_confidence: 0.30
+    min_amount: 0

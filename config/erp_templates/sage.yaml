@@ -1,0 +1,13 @@
+erp_name: Sage
+field_mapping:
+  invoice_number: "Reference"
+  vendor_id: "Supplier Account"
+  vendor_name: "Supplier Name"
+  invoice_date: "Invoice Date"
+  total_amount: "Net Amount"
+  line_item_description: "Details"
+  unit_price: "Unit Price"
+  quantity: "Quantity"
+  po_number: "Order Number"
+  payment_date: "Date Paid"
+  payment_status: "Status"

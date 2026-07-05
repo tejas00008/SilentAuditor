@@ -1,0 +1,13 @@
+erp_name: Xero
+field_mapping:
+  invoice_number: "InvoiceNumber"
+  vendor_id: "ContactID"
+  vendor_name: "ContactName"
+  invoice_date: "InvoiceDate"
+  total_amount: "Total"
+  line_item_description: "Description"
+  unit_price: "UnitAmount"
+  quantity: "Quantity"
+  po_number: "PONumber"
+  payment_date: "FullyPaidOnDate"
+  payment_status: "Status"
